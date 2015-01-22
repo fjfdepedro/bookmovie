@@ -1,0 +1,69 @@
+<%= form_for(@libro) do |f| %>
+  <% if @libro.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@libro.errors.count, "error") %> prohibited this libro from being saved:</h2>
+
+      <ul>
+      <% @libro.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :created.type %><br>
+    <%= f.text_field :created.type %>
+  </div>
+  <div class="field">
+    <%= f.label :created.value %><br>
+    <%= f.datetime_select :created.value %>
+  </div>
+  <div class="field">
+    <%= f.label :last_modified.type %><br>
+    <%= f.text_field :last_modified.type %>
+  </div>
+  <div class="field">
+    <%= f.label :string %><br>
+    <%= f.text_field :string %>
+  </div>
+  <div class="field">
+    <%= f.label :last_modified.value %><br>
+    <%= f.datetime_select :last_modified.value %>
+  </div>
+  <div class="field">
+    <%= f.label :latest_revision %><br>
+    <%= f.number_field :latest_revision %>
+  </div>
+  <div class="field">
+    <%= f.label :key %><br>
+    <%= f.text_field :key %>
+  </div>
+  <div class="field">
+    <%= f.label :authors.type.key %><br>
+    <%= f.text_field :authors.type.key %>
+  </div>
+  <div class="field">
+    <%= f.label :authors.author.key %><br>
+    <%= f.text_field :authors.author.key %>
+  </div>
+  <div class="field">
+    <%= f.label :type.key %><br>
+    <%= f.text_field :type.key %>
+  </div>
+  <div class="field">
+    <%= f.label :subjects %><br>
+    <%= f.text_field :subjects %>
+  </div>
+  <div class="field">
+    <%= f.label :revision %><br>
+    <%= f.number_field :revision %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

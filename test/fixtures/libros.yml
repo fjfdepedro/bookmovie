@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  created.type: MyString
+  created.value: 2014-12-03 20:37:30
+  last_modified.type: MyString
+  string: MyString
+  last_modified.value: 2014-12-03 20:37:30
+  latest_revision: 1
+  key: MyString
+  authors.type.key: MyString
+  authors.author.key: MyString
+  type.key: MyString
+  subjects: MyString
+  revision: 1
+
+two:
+  title: MyString
+  created.type: MyString
+  created.value: 2014-12-03 20:37:30
+  last_modified.type: MyString
+  string: MyString
+  last_modified.value: 2014-12-03 20:37:30
+  latest_revision: 1
+  key: MyString
+  authors.type.key: MyString
+  authors.author.key: MyString
+  type.key: MyString
+  subjects: MyString
+  revision: 1

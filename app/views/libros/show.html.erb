@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @libro.title %>
+</p>
+
+<p>
+  <strong>Created:</strong>
+  <%= @libro.created %>
+</p>
+
+<p>
+  <strong>Last modified:</strong>
+  <%= @libro.last_modified%>
+</p>
+
+<p>
+  <strong>Last modified:</strong>
+  <%= @libro.last_modified %>
+</p>
+
+<p>
+  <strong>Latest revision:</strong>
+  <%= @libro.latest_revision %>
+</p>
+
+<p>
+  <strong>Key:</strong>
+  <%= @libro.key %>
+</p>
+
+<p>
+  <strong>Authors:</strong>
+  <%= @libro.authors %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @libro.type %>
+</p>
+
+<p>
+  <strong>Subjects:</strong>
+  <%= @libro.subjects %>
+</p>
+
+<p>
+  <strong>Revision:</strong>
+  <%= @libro.revision %>
+</p>
+
+<%= link_to 'Edit', edit_libro_path(@libro) %> |
+<%= link_to 'Back', libros_path %>
